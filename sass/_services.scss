@@ -1,0 +1,62 @@
+.services {
+  padding: 20rem 0;
+  margin-top: -29vh;
+  background-color: $color-secondary-1;
+
+  &__grid {
+    display: grid;
+    margin: 0 3rem;
+    padding-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
+  }
+
+  &__item {
+    background-color: $color-secondary-2;
+    width: 30rem;
+    padding: 2rem 3rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: $shadow-small;
+    }
+  }
+
+  // On grid hover select the grid items that are not hovered and scale down
+  &__grid:hover &__item:not(:hover) {
+    transform: scale(0.95);
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+    fill: $color-primary-2;
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+  }
+
+  .heading-2 {
+    color: $color-grey-light-1;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: $shadow-small;
+      background-color: $color-primary-1;
+      color: $color-primary-2;
+    }
+  }
+}

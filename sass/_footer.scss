@@ -1,0 +1,41 @@
+.footer {
+  background-color: $color-primary-2;
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      margin: 0 2rem;
+      transition: all 0.2s;
+
+      //not a solution
+      backface-visibility: hidden;
+    }
+
+    &-item,
+    &-item:visited,
+    &-item:link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: $color-primary-1;
+      padding: 0.5rem 0.7rem;
+
+      // not a solution
+      backface-visibility: hidden;
+    }
+
+    &-link:hover {
+      transform: scale(1.1);
+      border: 1px solid $color-primary-1;
+      box-shadow: $shadow-smallest;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+  }
+}

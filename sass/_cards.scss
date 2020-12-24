@@ -1,0 +1,88 @@
+.cards-section {
+  background-color: $color-primary-2;
+  padding: 6rem 0;
+  // text-align: center;
+  backface-visibility: hidden;
+}
+
+.cards {
+  background-color: $color-primary-2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 7rem;
+  margin: 10rem 7rem;
+}
+
+.card {
+  background-color: $color-secondary-1;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3rem;
+  border-radius: 3px;
+  overflow: hidden;
+  // needed in both places to get rid of the blurriness
+  backface-visibility: hidden;
+
+  &__image {
+    // span the image on 2 columns
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1/-1;
+    z-index: 1;
+  }
+
+  &__like {
+    // position absolute upper right corner
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary-2;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    // make the heart icon visible on the drink image
+    z-index: 2;
+  }
+
+  .ingredients {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, max-content);
+    grid-row-gap: 1rem;
+    // height: 30rem;
+    align-items: center;
+
+    .ingredient-icon {
+      width: 1.75rem;
+      height: 1.75rem;
+      margin-right: 0.5rem;
+      fill: $color-primary-2;
+    }
+
+    p {
+      color: $color-primary-2;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+
+  .ingredient-1,
+  .ingredient-2 {
+    margin-top: 2.5rem;
+  }
+
+  .ingredient-1,
+  .ingredient-2,
+  .ingredient-3,
+  .ingredient-4,
+  .ingredient-5,
+  .ingredient-6 {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+  }
+}

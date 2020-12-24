@@ -1,0 +1,125 @@
+.navigation {
+  background-color: $color-primary-2;
+  border-bottom: 1px solid $color-primary-1;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding: 2rem;
+  z-index: 1000;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    fill: $color-primary-1;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-left: 3rem;
+
+    &__input {
+      background-color: $color-primary-1;
+      color: $color-grey-light-1;
+      width: 60%;
+      padding: 0.7rem 1rem;
+      font-family: inherit;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 100px;
+      transition: all 0.2s;
+      margin-right: -3.25rem;
+
+      &::-webkit-input-placeholder {
+        font-weight: 300;
+        color: $color-grey-light-1;
+      }
+    }
+
+    &__input:focus {
+      width: 75%;
+      outline: none;
+    }
+
+    &__button {
+      border: none;
+      background-color: $color-primary-1;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+      fill: $color-grey-light-1;
+      cursor: pointer;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+
+  &__item {
+    position: relative;
+    margin: 0 1rem;
+    display: flex;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-grey-light-1;
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 100;
+
+    span {
+      padding: 0 1rem;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $color-primary-1;
+    transform: scaleY(0);
+    // first the small line scale and then with a delay the width
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+      background-color 0.1s;
+  }
+
+  &__item:hover::before {
+    // start the line grow on the left side from the center in Y direction
+    transform: scaleY(1);
+    // initially is 3px and then will expand to 100% of the container widht
+    width: 100%;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-grey-light-1;
+  }
+}

@@ -1,0 +1,90 @@
+// Variables
+$color-primary-1: #311d3f;
+$color-primary-2: #e23e57;
+$color-secondary-1: #522546;
+$color-secondary-2: #88304e;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-black: #000;
+// Font
+$font: "Poppins", sans-serif;
+// Shadow
+$shadow: 0 2rem 4rem rgba($color-black, 0.6);
+$shadow-small: 0 2rem 4rem rgba($color-black, 0.4);
+$shadow-smallest: 0 1rem 2.5rem rgba($color-black, 0.4);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font;
+  color: $color-grey-light-1;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6rem;
+
+  &-cocktails {
+    width: 30%;
+    margin: 0 auto;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-primary-1;
+      color: $color-primary-2;
+      transform: scale(1.1);
+      box-shadow: $shadow-small;
+    }
+  }
+}
+
+.heading-3 {
+  font-size: 1.8rem;
+  color: $color-secondary-1;
+  margin-bottom: 1.5rem;
+}
+
+.heading-4 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  color: $color-primary-1;
+}
+
+.heading-5 {
+  font-size: 1.6rem;
+  background-color: $color-primary-1;
+  color: $color-primary-2;
+  text-align: center;
+  width: 70%;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  // place the drink name
+  grid-column: 1/-1;
+  // center horizontally
+  justify-self: center;
+  // place it on the bottom of the line
+  align-self: end;
+  grid-row: 1 / 2;
+  // make it visible on top
+  z-index: 3;
+  // place it between the lines for a nice effect
+  transform: translateY(50%);
+}

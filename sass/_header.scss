@@ -1,0 +1,48 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-1, 0.9),
+      rgba($color-primary-1, 0.9)
+    ),
+    url("../img/background-medium.jpg");
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  z-index: 200;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  backface-visibility: hidden;
+
+  &__box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    color: $color-grey-light-1;
+
+    &--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 300;
+      letter-spacing: 3rem;
+      margin-bottom: 2rem;
+      animation: moveInLeft 1s ease-out;
+    }
+
+    &--sub {
+      display: block;
+      font-size: 3rem;
+      letter-spacing: 1.3rem;
+      width: 100rem;
+      font-weight: 500;
+      animation: moveInRight 1s ease-out;
+      margin-bottom: 10rem;
+    }
+  }
+}

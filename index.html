@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <title>Shaker & Spoon Co.</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navigation">
+        <!-- Don't forget to hide/show navbar on scroll -->
+        <svg class="navigation__icon">
+            <use xlink:href="img/sprite.svg#icon-beverage"></use>
+        </svg>
+        <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Search cocktails">
+            <button class="search__button">
+                <!-- using svg sprite icon - best practice -->
+                <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+
+        <ul class="list">
+            <li class="list__item">
+                <a href="#cocktails" class="list__link">
+                    <svg class="list__icon">
+                        <use xlink:href="img/sprite.svg#icon-beverage"></use>
+                    </svg>
+                    <span>Cocktails</span>
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#services" class="list__link">
+                    <svg class="list__icon">
+                        <use xlink:href="img/sprite.svg#icon-cogs"></use>
+                    </svg>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#about" class="list__link">
+                    <svg class="list__icon">
+                        <use xlink:href="img/sprite.svg#icon-info"></use>
+                    </svg>
+                    <span>About Us</span>
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="#contact" class="list__link">
+                    <svg class="list__icon">
+                        <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__box">
+            <h2 class="header__text">
+                <span class="header__text--main">Cocktails</span>
+                <span class="header__text--sub">for home, or special events</span>
+            </h2>
+        
+            <a href="#" class="btn btn-main">See our selections</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+            <h2 class="heading-2" >About Us</h2>
+            <div class="about__grid">
+                <div class="about__grid--info">
+                    <div class="about__info">
+                        <h3 class="heading-3">Our bartenders bring the best hospitality experience</h3>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure inventore minus illum ipsum
+                            exercitationem, aliquam non, nisi, consequuntur voluptatum aliquid eum. Impedit consequuntur quidem quis.</p>
+                    </div>
+                    <div class="about__info">
+                        <h3 class="heading-3">You are gonna fall in love with these drinks</h3>
+                        <p class="paragraph">Iure inventore minus illum ipsum exercitationem, aliquam non, nisi, consequuntur voluptatum
+                            aliquid eum. Impedit consequuntur quidem quis.</p>
+                    </div>
+                    <div class="about__info">
+                        <h3 class="heading-3">The ultimate bartender training</h3>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus omnis cumque dolore,
+                            repellat qui itaque quasi nobis recusandae saepe aliquam. Maiores delectus aliquam sed dolor necessitatibus eum
+                            perferendis esse hic.</p>
+                    </div>
+                    <a href="#" class="btn btn-about">Show more &rarr;</a>
+                </div>
+                <div class="about__grid--composition">
+                    <div class="composition">
+                        <img src="./img/composition-1.jpg" alt="" class="composition__photo composition__photo--1">
+                        <img src="./img/composition-2.jpg" alt="" class="composition__photo composition__photo--2">
+                        <img src="./img/composition-3.jpg" alt="" class="composition__photo composition__photo--3">
+                    </div>
+                </div>
+            </div>          
+        </section>
+
+        <!-- Services -->
+        <section class="services" id="services">
+            <h2 class="heading-2">Professional Bartender Services</h2>
+            <div class="services__grid">
+                <div class="services__item">
+                    <svg class="services__icon">
+                        <use xlink:href="img/sprite.svg#icon-network"></use>
+                    </svg>
+                    <h4 class="heading-4">Nationwide delivery</h4>
+                    <p class="services__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam nisi velit repudiandae facilis accusamus.</p>
+                </div>
+                <div class="services__item">
+                    <svg class="services__icon">
+                        <use xlink:href="img/sprite.svg#icon-glass"></use>
+                    </svg>
+                    <h4 class="heading-4">Top Shelf Ingredients</h4>
+                    <p class="services__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi sit veritatis repudiandae suscipit dolores nobis, saepe dolorum autem ratione blanditiis minima est provident, quam nisi quidem a eum, voluptatibus magni!</p>
+                </div>
+                <div class="services__item">
+                    <svg class="services__icon">
+                        <use xlink:href="img/sprite.svg#icon-trophy"></use>
+                    </svg>
+                    <h4 class="heading-4">Trainings</h4>
+                    <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus similique voluptatem dolore voluptates quibusdam ratione, sequi nostrum earum blanditiis tempora? Sequi animi expedita alias?</p>
+                </div>
+                <div class="services__item">
+                    <svg class="services__icon">
+                        <use xlink:href="img/sprite.svg#icon-users"></use>
+                    </svg>
+                    <h4 class="heading-4">Hire a bartender</h4>
+                    <p class="services__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eligendi ex nemo? Deleniti natus non cumque eaque ipsam asperiores similique.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="cards-section">
+            <h2 class="heading-2 heading-2-cocktails" id="cocktails">Cocktails</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/cocktail-1-small.jpg" alt="cocktail 1" class="card__image">
+                    <svg class="card__like">
+                        <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <h5 class="heading-5">Gin Basil Smash</h5>
+                    <div class="ingredients">
+                        <div class="ingredient-1">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>60ml Tanqueray No.10 Gin</p>
+                        </div>
+                        <div class="ingredient-2">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Lemon Juice</p>
+                        </div>
+                        <div class="ingredient-3">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>15ml Simple Syrup 2:1</p>
+                        </div>
+                        <div class="ingredient-4">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>6 Basil Leaves</p>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <img src="img/cocktail-2-small.jpg" alt="cocktail 2" class="card__image">
+                    <svg class="card__like">
+                        <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <h5 class="heading-5">Negroni</h5>
+                    <div class="ingredients">
+                        <div class="ingredient-1">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Tanqueray No.10 Gin</p>
+                        </div>
+                        <div class="ingredient-2">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Campari</p>
+                        </div>
+                        <div class="ingredient-3">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Martini Rosso Vermouth</p>
+                        </div>                     
+                    </div>                 
+                </div>
+
+                <div class="card">
+                    <img src="img/cocktail-3-small.jpg" alt="cocktail 3" class="card__image">
+                    <svg class="card__like">
+                        <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <h5 class="heading-5">Clover Club</h5>
+                    <div class="ingredients">
+                        <div class="ingredient-1">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>60ml Bombay Sapphire Dry Gin</p>
+                        </div>
+                        <div class="ingredient-2">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Lemon Juice</p>
+                        </div>
+                        <div class="ingredient-3">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Raspberry Syrup </p>
+                        </div>
+                        <div class="ingredient-4">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>15ml Egg white</p>
+                        </div>
+                    </div>             
+                </div>
+
+                <div class="card">
+                    <img src="img/cocktail-4-small.jpg" alt="cocktail 4" class="card__image">
+                    <svg class="card__like">
+                        <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <h5 class="heading-5">Mexican Riviera</h5>
+                    <div class="ingredients">
+                        <div class="ingredient-1">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Don Julio Blanco</p>
+                        </div>
+                        <div class="ingredient-2">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Ilegal Mezcal Joven</p>
+                        </div>
+                        <div class="ingredient-3">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Clarified Orange Juice</p>
+                        </div>
+                        <div class="ingredient-4">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>10ml Galliano</p>
+                        </div>
+                        <div class="ingredient-5">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>Citric Acid</p>
+                        </div>
+                        <div class="ingredient-6">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>2 dash Coffee Bitters</p>
+                        </div>
+                    </div>             
+                </div>
+                <div class="card">
+                    <img src="img/cocktail-5-small.jpg" alt="cocktail 5" class="card__image">
+                    <svg class="card__like">
+                        <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <h5 class="heading-5">The Gardener</h5>
+                    <div class="ingredients">
+                        <div class="ingredient-1">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>45ml Beefeater 24 Gin</p>
+                        </div>
+                        <div class="ingredient-2">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>15ml Elderflower Liqueur</p>
+                        </div>
+                        <div class="ingredient-3">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Lemon Juice </p>
+                        </div>
+                        <div class="ingredient-4">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>30ml Filtered Apple Juice</p>
+                        </div>
+                        <div class="ingredient-5">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>15ml Simple Syrup</p>
+                        </div>
+                        <div class="ingredient-6">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>3 Cucumeber slice</p>
+                        </div>
+                    </div>             
+                </div>
+                <div class="card">
+                    <img src="img/cocktail-6-small.jpg" alt="cocktail 6" class="card__image">
+                    <svg class="card__like">
+                        <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <h5 class="heading-5">Deer Hunter</h5>
+                    <div class="ingredients">
+                        <div class="ingredient-1">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>50ml Jagermeister</p>
+                        </div>
+                        <div class="ingredient-2">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>20ml Red Wine Reduction</p>
+                        </div>
+                        <div class="ingredient-3">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>22.5ml Blackberry puree </p>
+                        </div>
+                        <div class="ingredient-4">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>15ml Lemon Juice</p>
+                        </div>
+                        <div class="ingredient-5">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>10ml Simple Syrup</p>
+                        </div>
+                        <div class="ingredient-6">
+                            <svg class="ingredient-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                            </svg>
+                            <p>15ml Egg White</p>
+                        </div>
+                    </div>             
+                </div>         
+            </div>
+            <a href="#" class="btn btn-cocktails">View All Cocktails</a>           
+        </section>
+
+        <!-- Form section -->
+        <section class="order" id="contact">
+            <div class="order__background">
+                <div class="order__container">
+                    <form action="#" class="form">
+                        <h2 class="form__header">Contact Us</h2> 
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="form__label">Full Name</label>
+                        </div>
+                
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                            <label for="email" class="form__label">Email address</label>
+                        </div>
+                
+                        <div class="form__group">
+                            <button class="btn btn-form">Order Now &rarr;</button>
+                        </div>
+                    </form>
+                </div>
+            </div>        
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__nav">
+            <li class="footer__nav-link">
+                <a href="#" class="footer__nav-item">Book a training</a>
+            </li>
+            <li class="footer__nav-link">
+                <a href="#" class="footer__nav-item">Order Now</a>
+            </li>
+            <li class="footer__nav-link">
+                <a href="#" class="footer__nav-item">Work for us</a>               
+            </li>
+            <li class="footer__nav-link">
+                <a href="#" class="footer__nav-item">Contact us</a>
+            </li>        
+        </ul>
+        
+        <p class="footer__text">&copy; Copyright 2020 by Szabi Vojtek. Fake cocktail page for a portfolio project</p>
+    </footer>
+</body>
+</html>
