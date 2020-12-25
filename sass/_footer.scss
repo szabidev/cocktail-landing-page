@@ -3,10 +3,20 @@
   padding: 10rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: $bp-900) {
+    padding: 3rem 0;
+  }
+
   &__nav {
     list-style: none;
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-900) {
+      flex-direction: column;
+      margin: 0 auto;
+    }
 
     &-link {
       margin: 0 2rem;
@@ -14,6 +24,10 @@
 
       //not a solution
       backface-visibility: hidden;
+
+      @media only screen and (max-width: $bp-900) {
+        padding: 1rem 0;
+      }
     }
 
     &-item,
@@ -23,6 +37,14 @@
       font-size: 1.6rem;
       color: $color-primary-1;
       padding: 0.5rem 0.7rem;
+
+      @media only screen and (max-width: $bp-medium-2) {
+        padding: 0;
+      }
+
+      @media only screen and (max-width: $bp-900) {
+        padding: 15rem 0;
+      }
 
       // not a solution
       backface-visibility: hidden;
